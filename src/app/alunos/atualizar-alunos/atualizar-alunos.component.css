@@ -1,0 +1,41 @@
+.container{
+    width: 30%;
+    margin: auto auto 2rem auto;
+    padding: 20px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Copperplate;
+    color: rgb(210,105,30);
+}
+
+img {
+    width: 30%;
+    height:50%;
+}
+
+.imagem {
+    text-align: center; 
+}
+
+button {
+    margin-top: .5rem;;
+}
+
+mat-label {
+    color: rgb(160,82,45);
+}
+
+mat-flat-button{
+    color: rgb(160,82,45);
+}
+
+.btn-salvar {
+    background-color: rgb(139,69,19);
+    color: white;
+}

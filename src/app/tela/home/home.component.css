@@ -1,0 +1,27 @@
+.card {
+   width: 80%;
+   margin: 5rem auto;
+   background-color: rgb(244, 235, 228);
+ }
+ 
+h3 {
+   font-weight: bold; 
+   font-family: Arial;
+   font-size: 18px;;
+   color: rgb(160,82,45);
+ }
+
+img {
+   width: 40%;
+   height: 40%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto
+ }
+
+p {
+   font-family: Verdana;
+   font-size: 16px;;
+   text-indent:3em;
+   text-align: justify;
+ }

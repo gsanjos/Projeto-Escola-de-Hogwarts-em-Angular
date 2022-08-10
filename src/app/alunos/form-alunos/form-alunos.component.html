@@ -1,0 +1,40 @@
+<div class="container mat-elevation-z8">
+    <form [formGroup]="meuForm" (submit)="onSubmit()">
+        <h1 class="fullWidth">Cadastro de Aluno</h1>
+        
+        <div class="imagem">
+            <img src="assets/img/Chapeu.png" alt="Cadastro de Aluno">
+        </div>
+       
+        <p>
+            <mat-form-field class="fullWidth" appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input type="text" class="form-control" formControlName="nome" matInput placeholder="Ex.. Fulano de Tal" maxlength="60">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field class="fullWidth" appearance="fill">
+                <mat-label>Casa</mat-label>
+                <mat-select formControlName="casa">
+                    <mat-option value="Corvinal">Corvinal</mat-option>
+                    <mat-option value="Grifinória">Grifinória</mat-option>
+                    <mat-option value="Lufa-lufa">Lufa-lufa</mat-option>
+                    <mat-option value="Sonserina">Sonserina</mat-option>
+                </mat-select>
+                <mat-icon matSuffix>home</mat-icon>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field class="fullWidth" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input type="text" class="form-control" formControlName="email" matInput placeholder="Ex.. fulano@tal.com">
+                <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+        </p>
+
+        <button class="fullWidth mat-elevation-z4 btn-salvar" mat-flat-button>Salvar</button>
+    </form>
+</div>

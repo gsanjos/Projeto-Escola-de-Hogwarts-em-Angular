@@ -1,0 +1,31 @@
+<mat-drawer-container class="container">
+  
+    <!-- É o menu lateral -->
+    <mat-drawer class="sidenav" mode="side" opened>
+     
+      <img src="assets/img/Brasão.png" alt="Imagem de navegação">
+      
+      <!-- Cria uma lista de navegação-->
+      <mat-nav-list class="nav-list">
+        <a mat-list-item routerLink="home"> <i class="material-icons">home</i> Home </a>
+        <a mat-list-item routerLink="alunos"> <i class="material-icons">school</i> Lista de Alunos </a>
+        <a mat-list-item routerLink="form"> <i class="material-icons">account_circle</i> Cadastro de Aluno </a>
+      </mat-nav-list>
+  
+    </mat-drawer>
+  
+    <!-- O sidenav-content é onde fica o conteúdo da página-->
+    <div class="sidenav-content">
+
+      <app-header></app-header>
+      
+      <!-- Botão redondo do menu
+      <button class="menu mat-elevation-z8" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>-->
+
+      <router-outlet></router-outlet> 
+    </div>
+  
+</mat-drawer-container>
+  
